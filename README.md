@@ -27,5 +27,25 @@ You may also use `.env` files and directly set the log_level through that too
 LOG_LEVEL=DEBUG
 ```
 
+
+## Example
+
+```python
+
+from aerialog import Logger
+
+log = Logger()
+
+def main():
+    log.info("This is a really interesting info message!", "Main")
+    log.error("Oh no! an error happened here", "Error")
+
+
+def file_setup():
+    log.set_file("awesome-project.log")
+    log.info("This now gets logged to the file!", "File")
+    log.remove_file() # It will now log back to the terminal
+```
+
 ## Licence
 This project uses the following license: [PYTHON PACKAGING AUTHORITY](https://github.com/devtomos/aerialog/blob/main/LICENSE.md).

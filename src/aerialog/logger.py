@@ -2,8 +2,8 @@ from enum import Enum
 import datetime, sys
 import os, re
 
-from colours import bright_magenta, bright_blue, bright_green
-from colours import bright_red, red, bright_yellow, dimmed
+from .colours import bright_magenta, bright_blue, bright_green
+from .colours import bright_red, red, bright_yellow, dimmed
 from dotenv import load_dotenv
 
 class LogLevel(Enum):
