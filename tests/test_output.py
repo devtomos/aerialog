@@ -1,6 +1,5 @@
 import unittest
-
-from aerialog.logger import Logger
+from aerialog import Logger
 
 class TestOutput(unittest.TestCase):
     def test_output(self):
